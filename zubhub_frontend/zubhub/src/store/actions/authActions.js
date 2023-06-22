@@ -36,7 +36,7 @@ export const login = args => {
           payload: { token: res.key },
         });
       })
-      .then(() => args.history.push('/profile'));
+      .then(() => args.history.goBack());
   };
 };
 
